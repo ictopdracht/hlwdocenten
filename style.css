@@ -1,0 +1,209 @@
+/* Algemene stijlen */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+}
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+header .signup-btn {
+    background-color: #fff;
+    color: #1a73e8;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+header .signup-btn:hover {
+    background-color: #e8f0fe;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.reviews {
+    margin-top: 30px;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.review:last-child {
+    border-bottom: none;
+}
+
+.review h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #1a73e8;
+}
+
+.review p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.message {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #ffecb3;
+    border-radius: 4px;
+    border: 1px solid #f1d15f;
+    color: #b28d00;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Signup formulier */
+#signup-form {
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-form .form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+#signup-form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#signup-form button:hover {
+    background-color: #1669c1;
+}
+
+/* Annuleer knop in lichtgrijs */
+#signup-form .cancel-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #f1f1f1;
+    color: #666;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#signup-form .cancel-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsieve stijlen voor mobiele apparaten */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header .signup-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .reviews .review h3 {
+        font-size: 16px;
+    }
+
+    .review p {
+        font-size: 14px;
+    }
+
+    #signup-form .form-container {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+/* Responsieve stijlen voor kleinere schermen zoals telefoons */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    header .signup-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .reviews .review h3 {
+        font-size: 14px;
+    }
+
+    .review p {
+        font-size: 12px;
+    }
+
+    #signup-form .form-container {
+        width: 90%;
+        max-width: 320px;
+    }
+}

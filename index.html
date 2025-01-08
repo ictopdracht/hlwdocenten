@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback over HLW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Feedback over HLW</h1>
+        <button class="signup-btn" onclick="showSignupForm()">Maak een account aan!</button>
+    </header>
+
+    <!-- Inleiding -->
+    <div class="container">
+        <h2>Graag ontvangen we jullie feedback over hoe jullie het vinden om op het HLW te werken.</h2>
+        <p class="intro-text">We zouden het zeer op prijs stellen als je de tijd neemt om je mening te delen over je ervaring op de school. Je feedback is van grote waarde voor ons!</p>
+
+        <!-- Bericht dat account nodig is -->
+        <div class="message">
+            <p>Om verder te gaan en feedback in te vullen, moet je een account aanmaken.</p>
+        </div>
+
+        <!-- Reviews -->
+        <div class="reviews">
+            <div class="review">
+                <h3>Y. Zerri (Teamleider)</h3>
+                <p>"Ik vind het geweldig om met zo'n gemotiveerd team samen te werken. De school biedt een uitstekende omgeving voor zowel studenten als personeel."</p>
+            </div>
+            <div class="review">
+                <h3>Meester Nassir (ICT Docent)</h3>
+                <p>"Het is altijd gezellig met de leerlingen. We hebben een goede band, wat zorgt voor een fijne werkomgeving."</p>
+            </div>
+            <div class="review">
+                <h3>Y. Dasli (Natuurkunde Docent)</h3>
+                <p>"Door les te geven leer ik steeds meer nieuwe dingen, en het geeft me voldoening om mijn kennis over te dragen."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signup-form">
+        <div class="form-container">
+            <h2>Aanmelden</h2>
+            <form id="form">
+                <input type="text" id="firstname" name="firstname" placeholder="Voornaam" required>
+                <input type="text" id="lastname" name="lastname" placeholder="Achternaam" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Wachtwoord" required>
+                <button type="submit">Aanmelden</button>
+                <button type="button" class="cancel-btn" onclick="hideSignupForm()">Annuleren</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
